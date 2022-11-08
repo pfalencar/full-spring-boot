@@ -2,11 +2,8 @@ package io.github.pfalencar.fullstack;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 
-@Configuration
-@Profile("production")
+@Development
 public class MyConfiguration {
 
     @Bean
@@ -15,6 +12,5 @@ public class MyConfiguration {
             System.out.println("RODANDO A CONFIGURAÇÃO DE DESENVOLVIMENTO");
         };
     }
-
 
 }
