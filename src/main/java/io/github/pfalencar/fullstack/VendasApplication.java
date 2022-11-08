@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class VendasApplication {
 
     @Value("${application.name}")
-    private String applicationName; //o Spring vai na calsse application.properties e pega o valor da application.name e coloca nesta variável.
+    private String applicationName; //o Spring vai na classe application.properties e pega o valor da application.name e coloca nesta variável.
 
     @GetMapping("/hello")
     public String helloWorld() {
